@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Program_building_block
 {
-    //Virtual, override and abstract methods
+    //override and abstract methods
     public abstract class Automovil
     {
         protected string Propietario { get; set; }
@@ -22,7 +22,7 @@ namespace Program_building_block
     {
         public override void Bocina()
         {
-            Console.WriteLine("La bocina suena pipi");
+            Console.WriteLine("La bocina suena pi");
         }
         public override void Caracteristicas()
         {

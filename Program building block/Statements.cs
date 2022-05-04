@@ -8,9 +8,17 @@ namespace Program_building_block
 {
     public class Statements
     {
-        int edad = Convert.ToInt32(Console.ReadLine());
+        private int edad = Convert.ToInt32(Console.ReadLine());
+
+        //Constructors
+        public Statements()
+        {
+            Console.Clear();
+        }
+  
         public void Comprobacion()
         {
+            
             if(edad >= 18)
             {
                 Console.WriteLine("Mayor de edad");
@@ -37,7 +45,7 @@ namespace Program_building_block
             string continuar;
             do
             {
-                Console.WriteLine("Introduzca un numero");
+                Console.WriteLine("Introduzca un numero para ver su tabla");
                 int num = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("La tabla de multiplicar de: " + num + " es ");
                 for (int i = 1; i <= 10; i++)
