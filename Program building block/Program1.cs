@@ -35,7 +35,8 @@ namespace Program_building_block
             string continuar;
             do
             {
-                Console.WriteLine("Seleccione una opcion: 1.Throw, 2.Polimorfismo, 3.Statements. 4.Members, Otra opcion clase static");
+                Console.WriteLine("Seleccione una opcion:");
+                Console.WriteLine("1.Throw, 2.Polimorfismo, 3.Statements. 4.Members, Otra opcion clase static");
                 string opcion = Console.ReadLine();
                 switch (opcion)
                 {
@@ -65,13 +66,13 @@ namespace Program_building_block
                         //Polimorfismo
                         var jose = new Usuario();
                         jose.Registro();
-                        Usuario juan = new Usuario2();
+                        var juan = new Usuario2();
                         juan.Registro();
                         break;
 
                     case "3":
                         Console.WriteLine("Introduzca su edad: ");
-                        Statements oStatements = new Statements();
+                        var oStatements = new Statements();
                         oStatements.Comprobacion();
                         oStatements.Tabla();
                         break;

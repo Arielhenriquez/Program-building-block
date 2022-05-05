@@ -9,7 +9,7 @@ namespace InternalTest
         static void Main(string[] args)
         {
             //Internal
-            Program1 test = new Program1();
+            var test = new Program1();
         }
     }
 }
